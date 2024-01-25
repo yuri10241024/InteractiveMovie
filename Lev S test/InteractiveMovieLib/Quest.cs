@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using Newtonsoft.Json;
 
 namespace Interactive_moive
@@ -14,6 +15,12 @@ namespace Interactive_moive
         public Quest()
         {
             ListOfScenes = new List<Scene>();
+        }
+        // string q = @"D:\_STUDIOS\VISUAL_STUDIO\Programming\Видео для программирования\Тест для ИФ123_1\Готовое\3.1.json"
+        static public Quest GetQuest(string fileName)
+        {
+            Quest quest = JsonConvert.DeserializeObject<Quest>(File.ReadAllText(fileName));
+            return quest;
         }
     }
 }

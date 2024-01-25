@@ -70,7 +70,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-                <!-- Здесь забобахать юзер koнтрол для саунда-->
+                <!-- Здесь забобахать юзер koнтрол\ для саунда-->
             </StackPanel>
         </StackPanel>
 

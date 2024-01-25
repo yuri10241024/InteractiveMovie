@@ -26,15 +26,14 @@ namespace Interactive_moive
 
         Scene CurrentScene;
         public bool IsMain;
-
-        Quest q = new Quest();
+        Quest q  = new Quest();
 
         public GameWindow()
         {
             InitializeComponent();
             MainPlayer.MediaEnded += EndVideo;
 
-            q = JsonConvert.DeserializeObject<Quest>(File.ReadAllText(@"D:\_STUDIOS\VISUAL_STUDIO\Programming\Видео для программирования\Тест для ИФ123_1\Готовое\3.1.json"));
+            q = Quest.GetQuest(@"D:\_STUDIOS\VISUAL_STUDIO\Programming\Видео для программирования\Тест для ИФ123_1\Готовое\3.1.json");
             
             ShowScene(GetScene(0));
 
