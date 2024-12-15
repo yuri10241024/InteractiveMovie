@@ -19,13 +19,11 @@ namespace Interactive_moive
         {
             ListOfScenes = new List<Scene>();
         }
-
         static public Quest GetQuest(string fileName)
         {
             Quest quest = JsonConvert.DeserializeObject<Quest>(File.ReadAllText(fileName));
             return quest;
         }
-
         public void OrganizeScenesByLvl()
         {
             //1. Ищем корневую сцену
@@ -123,7 +121,6 @@ namespace Interactive_moive
             for(int i = 0; i < scene.ListOfVariants.Count; i++)
             {
                 Scene NextScene = ListOfScenes.Where(s => s.ID == scene.ListOfVariants[i].TargetID).FirstOrDefault();// ищем сцену на которую ведёт этот вариант
-
                 if (NextScene.Lvl < scene.Lvl || NextScene.Lvl == 0)
                 {
                     NextScene.Lvl = scene.Lvl + 1;
@@ -131,7 +128,6 @@ namespace Interactive_moive
                 SetID(NextScene);//рекурсия
             }
         }
-
         private  List<Scene> GetStartScene()
         {
             List<Scene> scenes = new List<Scene>();

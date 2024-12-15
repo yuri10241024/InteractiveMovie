@@ -29,7 +29,7 @@ namespace IncredibleVisualizer
         public MainWindow()
         {
             InitializeComponent();
-            quest = Quest.GetQuest(@"D:\_STUDIOS\VISUAL_STUDIO\Programming\Видео для программирования\Тест для ИФ123_1\Готовое\inst 1.json");
+            quest = Quest.GetQuest(@"D:\_STUDIOS\VISUAL_STUDIO\Programming\Видео для программирования\Тест для ИФ123_1\Готовое\Biggest project.json");
 
             quest.OrganizeScenesByLvl();
             quest.FindAllIzolateChildren();

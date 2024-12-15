@@ -56,7 +56,7 @@ namespace Interactive_moive
             BSelected2.Visibility = Visibility.Collapsed;
             BSelected3.Visibility = Visibility.Collapsed;
 
-            if (scene.ListOfVariants.Count > 0) 
+            if (scene.ListOfVariants.Count > 0)
             {
                 TBSelect1.Text = scene.ListOfVariants[0].Description;
             }

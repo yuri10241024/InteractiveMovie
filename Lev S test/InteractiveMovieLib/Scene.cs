@@ -54,17 +54,14 @@ namespace Interactive_moive
 
         //public bool IsChild;
 
-
-
         public Scene()
         {
             ListOfVariants = new List<Variant>();
         }
 
-        void SerealiseScene(string PathToScene)
+        public void SerealiseScene(string PathToScene)
         {
             string[] str = File.ReadAllLines(PathToScene);
         }
     }
-
 }

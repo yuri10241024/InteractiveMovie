@@ -24,9 +24,10 @@ namespace Interactive_moive
     public partial class MainWindow : Window
     {
 
-        public string PathToProject = @"D:\ABOBA.json";
+        public string PathToProject = @"D:\_STUDIOS\VISUAL_STUDIO\Programming\Видео для программирования\Тест для ИФ123_1\Готовое\TestFilm2.0.json";
         public MainWindow()
         {
+            SerealiseScene();
             InitializeComponent();
             //MessageBox.Show(System.Windows.SystemParameters.PrimaryScreenWidth.ToString());
             //MessageBox.Show(System.Windows.SystemParameters.PrimaryScreenHeight.ToString());
